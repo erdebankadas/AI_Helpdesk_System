@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Live Chat with Shivila</h4>
+                    <p1 class="chatbox__description--header">I'm LiLi</p1><br>
+                    <p2 class="chatbox__description--footer"> I'll Help You</p2>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div>
+                    <div class="note_div">
+                        <p class="note"><b>What do you want to discuss?</b></p>
+                    </div>
+                    <div class="message_btn_div">
+                        <a href="#ind_sec"><button id="ind"class="message_btn" onclick="industry_btn()">Industrial Sectors</button></a><br>
+                        <!-- <input type="hidden" id="ind" name="ind" value="industry"> -->
+                        <a href="#prod_sec"><button class="message_btn" onclick="products_btn()">Products</button></a><br>
+                         <a href="#serv_sec"><button class="message_btn" onclick="services_btn()">Services</button></a><br> 
+                        <a href="https://shivila.com/" target="_main" onclick="games_btn()"><button class="message_btn" >Games</button></a><br>
+                        <a href="#supp_sec"><button class="message_btn" onclick="support_btn()">Support</button><br></a>
+                    </div>
+                    
+                    <div id="ind_sec" class="options1">
+                       <div class="options1_btn_div">
+                        
+                        <a href="https://shivila.com/banking/"><button class="message_btn" onclick="banking_btn()">Banking</button><br></a>
+                        <a href="https://shivila.com/travel/"><button class="message_btn" onclick="travel_btn()">Travel</button><br></a>
+                        <a href="https://shivila.com/capital-markets/"><button class="message_btn" onclick="capital_markets_btn()">Capital Markets</button><br></a>
+                        <a href="https://shivila.com/education/"><button class="message_btn" onclick="education_btn()">Education</button><br></a>
+                        <a href="https://shivila.com/retail/"><button class="message_btn" onclick="retail_btn()">Retail</button><br></a>
+                        <a href="https://shivila.com/insurance/"><button class="message_btn" onclick="insurance_btn()">Insurance</button><br></a>
+                        <a href="https://shivila.com/health/"><button class="message_btn" onclick="health_btn()">Health</button><br></a>
+                        </div>
+                    </div>
+
+                    <div id="prod_sec"class="options2">
+                        <div class="options2_btn_div">
+                            <a href=""><button class="message_btn" onclick="gather_app()">Gather App</button></a><br>
+                            <a href=""><button class="message_btn" onclick="MAttendance_app()">MAttendance App</button></a><br>
+                           <a href="https://shivila.com/employee-payroll-system/" target="_main" > <button class="message_btn" onclick="payroll_app()">MPayroll App</button></a><br>
+                           <a href="https://attendance.shivila.tech/"> <button class="message_btn" onclick="vWorkin_app()">VWorkin App</button></a><br>
+                           <a href="https://shivila.com/intervc-candidate/" target="_main"> <button class="message_btn" onclick="intervc_app()">InterVC App</button></a><br>
+                           <a href="#endForm"><button class="message_btn" onclick="jobNearby_app()">JobNearby App</button></a><br>
+                           <a href="#endForm"> <button class="message_btn" onclick="cSkill_app()">CSkill App</button></a><br>
+                           <a href="#endForm"> <button class="message_btn" onclick="AIsyst_app()">AISyst. App</button></a><br>
+                           <a href="#endForm"> <button class="message_btn" onclick="checkcall_app()">CheckCall App</button></a><br>
+                           <a href="#endForm"> <button class="message_btn" onclick="DigitMarket_app()">DigitMark App</button></a><br>
+                           <a href="https://shivila.com/dew-web-browser/" target="_main"> <button class="message_btn" onclick="dew_browser()">Dew Web Browser</button></a>
+                          
+                        </div>
+                   </div>   
+
+                    <div id="serv_sec"class="options3">
+                        <div class="options3_btn_div">
+                            <a href="#Engeneering_services"> <button class="message_btn" onclick="eng()">Engineering</button></a><br>
+                            <a href="https://shivila.com/cloud-computing/" target="_main"> <button class="message_btn" onclick="cloud_comp()">Cloud Computing</button></a><br>
+                            <a href="https://shivila.com/blockchain-2/" target="_main"> <button class="message_btn" onclick="blockchain()">Blockchain</button></a><br>
+                            <a href="https://shivila.com/automation-and-manual-qa-service/" target="_main"> <button class="message_btn" onclick="automation()">Automation & Manual QA Service</button></a><br>
+                            <a href="https://shivila.com/security-testing/" target="_main"> <button class="message_btn" onclick="security_test()">Security Testing</button></a><br>
+                            <a href="https://shivila.com/technology-innovation/" target="_main"> <button class="message_btn" onclick="tech_innov()">Technology Innovation</button></a><br>
+                            <a href="https://shivila.com/technology-consulting/" target="_main"> <button class="message_btn" onclick="tech_consult()">Technology Consulting</button></a><br>
+                        </div>
+                    </div>   
+
+                     <div id="supp_sec"class="options4">
+                        <div class="options4_btn_div">
+                           <a href="#support_sec"><button class="message_btn" onclick="generate_your_ticket()">Generate your Ticket</button></a><br>
+                           <a href="#endForm"><button class="message_btn" onclick="customer_agent()">Do you want to talk to our Customer Agent?</button></a>
+                           <!-- <button class="message_btn" ></button><br>
+                           <button class="message_btn" >supbtn3</button><br> -->
+                         </div>
+                     </div>   
+
+                     <div id="Engeneering_services" class="eng_serv_opt">
+                        <div class="eng_serv_div">
+                         <a href="#Website Development"> <button class="message_btn" onclick="website_dev()">Website Development</button></a><br>
+                         <a href="#Web_app_development"><button class="message_btn" onclick="webapp_dev()">Web App Development</button><br></a>
+                         <a href="#Mobile_app_development"><button class="message_btn" onclick="mobapp_dev()">Mobile App Development</button><br></a>
+                         <a href="#Desktop_app_development"><button class="message_btn" onclick="deskapp_dev()">Desktop App Development</button><br></a>
+                         <a href="#plugin_development"><button class="message_btn" onclick="plugin_dev()">Plugin Development</button><br></a>
+                         </div>
+                     </div>
+
+                     <div id="Website Development" class="webs_serv_opt">
+                        <div class="webs_serv_div">
+                         <a href="#endForm"> <button class="message_btn" onclick="static()">Static</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="dynamic()">Dynamic</button><br></a>
+                         <a href="#endForm"><button class="message_btn" onclick="content_mang()">Content Management System Based</button><br></a>
+                         </div>
+                     </div>
+
+                     <div id="Web_app_development" class="web_app_opt">
+                        <div class="web_app_div">
+                         <a href="#endForm"> <button class="message_btn" onclick="eCom()">eCommerce</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="enterp()">Enterprise Resource Planning</button></a><br>
+                         </div>
+                     </div>
+
+                     <div id="Mobile_app_development" class="mob_app_opt">
+                        <div class="mob_app_div">
+                         <a href="#endForm"> <button class="message_btn" onclick="android()">Android</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="ios()">IOS</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="cross_plat()">Cross-Platform</button></a><br>
+                         </div>
+                     </div>
+
+                     <div id="Desktop_app_development" class="desk_app_opt">
+                        <div class="desk_app_div">
+                         <a href="#endForm"> <button class="message_btn" onclick="windows()">Windows</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="mac()">Mac OS</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="linux()">Linux</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="cross_platf()">Cross Platform</button></a><br>
+                         </div>
+                     </div>
+
+                     <div id="plugin_development" class="plug_opt">
+                        <div class="plug_div">
+                         <a href="#endForm"> <button class="message_btn" onclick="chrome()">Chrome</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="edge()">MS Edge</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="firefox()">Firefox</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="opera()">Opera</button></a><br>
+                         <a href="#endForm"><button class="message_btn" onclick="safari()">Safari</button></a><br>
+                         </div>
+                     </div>
+
+                        <div id="support_sec" class="support_sec">
+                            <div class="form_div">
+                                <h3 style= color:blueviolet;>Generate Trouble Ticket</h3>
+                                <div class="form">
+                                    <form id="supportForm" action="http://127.0.0.1:8000/helpdeskticket/projects/" method="POST" enctype="multipart/form-data">
+                                    <div>
+                                    <label for="title" class="label">Title</label>
+                                    <input type="text" id="title" class="input_feild" name="title">
+                                </div>
+
+                                <div>
+                                    <label for="email" class="label">Email</label>
+                                    <input type="text" id="email" class="input_feild" name="email">
+                                </div>
+
+                                <div>
+                                    <label for="phone_no" class="label">Phone Number</label>
+                                    <input type="number" id="numb" class="input_feild" name="phone_number">
+                                </div>
+
+                                   
+                                <div> 
+                                    <label for="ticket" class="label">Ticket Priority</label>
+                                    <select name="ticket_priority" id="ticket_prior"class="status_dropdown">
+                                        <option value="low" class="status_option">Low</option>
+                                        <option value="med" class="status_option">Medium</option>
+                                        <option value="high" class="status_option">High</option>
+                                        </select>
+                                 </div>
+
+                               
+                                       
+                                <div>
+                                    <label for="image" class="label">Supported Image</label>
+                                    <input type="file" class="image_field" name="supported_image">
+                                    
+                                    
+                                </input>
+                                </div>
+
+                                <!--div class="fileUpload btn btn-primary"><label class="upload"><input name="file" type="file"/-->
+                                 
+                                <!--input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+                                <div id="display-image"></div-->   
+                                
+
+                                <div class="submit_btn">
+                                    <a href=""> <button type="submit" class="message_btn">Submit</button></a>
+                                </div> 
+                                  </form>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="Talk_To_CustAgent" class="custAgent">
+                        <div class="cust_agent_div">
+                      <a href="https://api.whatsapp.com/send/?phone=918100421591&text=Hi&app_absent=0"> <img src="./images/whatsapp.png" class="custAgent_icon" width="50" height="50"> </a>
+                         </div>
+                     </div>
+
+                     
+                     <div id="endForm" class="support_sec">
+                        <div class="form_div">
+                            <h3 style= color:blueviolet;>Customer Information</h3>
+                            <div class="form2">
+                                <form action="http://127.0.0.1:8000/customer/projects/" method="POST">
+                                    <div >
+                                        <input type="text" id="name" placeholder=" Name"class="input_feild2" name="name">
+                                    </div>
+
+                                    <!-- <div>
+                                        <select>
+                                            <option value="High">High</option>
+                                            <option value="">Medium</option>
+                                            <option value="">Low</option>
+                                        </select>
+                                    </div> -->
+
+                                    <div>
+                                        
+                                        <input type="number" id="phone" placeholder="Phone Number"class="input_feild2" name="phone_number">
+                                    </div>
+
+                                    <div>
+                                        
+                                        <input type="email" id="email" placeholder="Email" class="input_feild2" name="email">
+                                    </div>
+
+                                    <div class="submit_btn">
+                                        <a href="#Talk_To_CustAgent"><button onclick="func()" type="submit" class="message_btn" value="submit">Submit</button></a>
+                                    </div> 
+                              </form>
+                        </div>
+                    </div>
+                  </div>
+
+
+            </div>
+            </div>
+        <div class="chatbox__footer">
+        </div>
+        </div>
+        <div class="chatbox__button">
+            <button class="chatbox_button1"><img src="./images/women_logo.jpg" class="chatbox_button_logo"/></button>
+        </div>
+    </div>
+</div>
+
+    <script src="./app.js"></script>
+    <!-- <script>
+    function scrollToWhatsapp(){
+        document.querySelector('#Talk_To_CustAgent').scrollIntoView()
+    }</script> -->
+</body>
+
+</html>
